@@ -1,0 +1,21 @@
+server:
+ port: 8081
+propsdemo:
+ model:
+  first: "Robert"
+  second: "George"
+ myapp:
+  myArrayProps:
+   - UK
+   - US
+   - AU
+ cloudplatforms:
+  providers:
+   - provider: AWS
+     company: Amazon
+   - provider: GCP
+     company: Google
+   - provider: Azure
+     company: Microsoft
+
+
