@@ -18,16 +18,16 @@ propsdemo:
    - provider: Azure
      company: Microsoft
 buffer:
- bufferTimes:
-  - type: "displayTime"
-    batchSize: 5
-    timeWindowDuration: "PT5M"
-    memoryInUseFlushThresholdPercentage: 30
-    awsS3CheckConnectivity: true
-  - type: "sharadTime"
-    batchSize: 5
-    timeWindowDuration: "PT5M"
-    memoryInUseFlushThresholdPercentage: 30
-    awsS3CheckConnectivity: true
+  bufferTimes:
+    - type: "MamuTime"
+      levelTwo:
+        property1: "Mamu"
+        property2: "Tanu"
+      batchSize: 5
+    - type: "sharadTime"
+      levelTwo:
+        property1: "Ricky"
+        property2: "Ponting"
+      batchSize: 5
 
 

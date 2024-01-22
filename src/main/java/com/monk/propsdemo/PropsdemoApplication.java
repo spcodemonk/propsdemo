@@ -19,7 +19,7 @@ public class PropsdemoApplication {
 	public MyClass myClass(BufferProperties bufferProperties){
 		System.out.println("----------------------------------------------------------------------");
 
-		bufferProperties.getBufferTimes().forEach(buffer-> System.out.println(buffer.getType()));
+		bufferProperties.getBufferTimes().forEach(buffer-> System.out.println(buffer.getType() +"---" + buffer.getLevelTwo().getProperty1()));
 
 		System.out.println("-----------------------------------------------------------------------");
 		return new MyClass();

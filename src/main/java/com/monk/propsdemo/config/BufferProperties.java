@@ -1,5 +1,6 @@
 package com.monk.propsdemo.config;
 
+import com.monk.propsdemo.mp.LevelTwo;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -15,14 +16,8 @@ public class BufferProperties {
     @Data
     public static class BufferTime {
         private String type;
+        private LevelTwo levelTwo;
         private int batchSize;
-        private String timeWindowDuration;
-        private int memoryInUseFlushThresholdPercentage;
-        private boolean awsS3CheckConnectivity;
-        private String awsS3BootUpFilePrefix;
-        private String awsS3CollectionRegion;
-        // ... other properties
 
-        // If using Lombok, no need for explicit getters and setters
     }
 }
