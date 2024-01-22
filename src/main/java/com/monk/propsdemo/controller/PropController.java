@@ -13,25 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PropController {
 
-    @Autowired
-    private PropertiesAsAObject propertiesAsAObject;
 
-    @Autowired
-    private ArrayAsAProperty arrayAsAProperty;
 
     @Autowired
     private CloudPlatformConfigs cloudPlatformConfigs;
 
-    @GetMapping("/propertiesAsAObject")
-    public PropertiesAsAObject getPropertyObject(){
-        System.out.println(propertiesAsAObject.first());
-        return propertiesAsAObject;
-    }
-    @GetMapping("/arrayAsAProperty")
-    public ArrayAsAProperty getPropertyArray(){
-        System.out.println(arrayAsAProperty);
-        return arrayAsAProperty;
-    }
+
 
     @GetMapping("/cloudPlatformConfigs")
     public CloudPlatformConfigs getCloudPlatformConfigs(){

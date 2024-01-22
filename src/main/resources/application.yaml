@@ -17,5 +17,17 @@ propsdemo:
      company: Google
    - provider: Azure
      company: Microsoft
+buffer:
+ bufferTimes:
+  - type: "displayTime"
+    batchSize: 5
+    timeWindowDuration: "PT5M"
+    memoryInUseFlushThresholdPercentage: 30
+    awsS3CheckConnectivity: true
+  - type: "sharadTime"
+    batchSize: 5
+    timeWindowDuration: "PT5M"
+    memoryInUseFlushThresholdPercentage: 30
+    awsS3CheckConnectivity: true
 
 
